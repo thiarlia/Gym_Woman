@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+nav#menu {
+	background-color: black;
+}
+nav#menu a{
+	font-family: 'Permanent Marker', cursive;
+	font-size: 20px;
+	color: #FA58D0;
+}
+body {
+	background: url(material/imagens/imagem30.jpg);
+}
