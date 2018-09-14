@@ -1,5 +1,6 @@
 <?php 
- include 'menuPrincipal2.php';
+    include 'controllerCliente.php';
+    include 'menuPrincipal2.php';
 ?>
 
 <!DOCTYPE html>
@@ -21,7 +22,7 @@
 	
 	
 	<div class = "container" style = "margin-top: 3%;">
-		<form action = "#" method = "POST">
+		<form action="" method = "POST">
 			<div class = "form-group">
 				<label for = "nome">Nome completo</label>
 				<input type = "text" id = "nome" name = "nome" class = "form-control">
@@ -79,7 +80,7 @@
             </div>
 			
 			<div class = "row">
-				<button type = "submit" class = "btn" style = "background-color: #FA58D0; margin-left: 93%;">Enviar</button>
+				<button name = "enviar" type = "submit" class = "btn" style = "background-color: #FA58D0; margin-left: 93%;">Enviar</button>
 			</div>
 		</form>
 	
