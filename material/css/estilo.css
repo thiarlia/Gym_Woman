@@ -1,13 +1,42 @@
 @import url('https://fonts.googleapis.com/css?family=Righteous');
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
-nav#menu {
-	background-color: black;
-}
-nav#menu a{
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+
+nav#menuPrincipal a{
 	font-family: 'Permanent Marker', cursive;
 	font-size: 20px;
 	color: #FA58D0;
 }
 body {
 	background: url(material/imagens/imagem30.jpg);
+}
+h1#legendadapagina {
+	font-family: 'Permanent Marker', cursive; 
+	font-size: 70px; 
+	text-align: center;
+	margin-top: 4%;
+}
+div img#patrocinadores {
+	width: 40%;
+}
+div#divequipamentos {
+	width: 90%;
+	margin-top: 8%;
+	margin-left: 7%;
+	text-align: center;
+}
+div#textoequipamentos {
+	text-align: center;
+	font-family: 'Shadows Into Light', cursive;
+	font-size: 180%;
+}
+a#linkbranco{
+	text-decoration: none;
+	color: white !important;
+}
+button {
+	color: white !important;
+}
+i#iconehome {
+	
 }

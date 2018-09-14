@@ -1,41 +1,29 @@
+<?php 
+ include 'menuPrincipal2.php';
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <title>Equipamentos </title>
-    <meta charset="utf-8">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet"> <!-- link da fonte de texto principal   -->
-	<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet"> <!-- link da fonte de texto secundario   -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
-    <style>
-	 h5{
-		font-family: 'Permanent Marker', cursive;
-		font-size: 55px;
-		text-align:center;
-		background-color:#FA58D0;
-	 }
-	 h6{
-		text-align:center;
-		font-family:'Righteous', cursive;
-		font-size: 25px;
-		border-bottom-width: 4px;
-		border-bottom-style:inset;
-		border-bottom-color:#FA58D0;
-	 }
-	 p{
-		font-family: 'Righteous', cursive;
-	 }
-	#botao{
-	background-color:#FFF5EE;
+    <title>Equipamentos </title>    
+  </head>
+	<style>
+		 h6{
+			text-align:center;
+			font-family:'Righteous', cursive;
+			font-size: 25px;
+			border-bottom-width: 4px;
+			border-bottom-style:inset;
+			border-bottom-color:#FA58D0;
+		 }
+		#botao{
+		background-color:#FFF5EE;
 	}
 	</style>
-	
-  </head>
   <body>
+  
 	<div>
-	     <h5>Equipamentos e suas funcionalidades</h5>
+	     <h1 id = "legendadapagina">Equipamentos</h1>
 	</div>
 	<div  style  =" margin-top:80px " class="container">
 		<div class="row">
@@ -122,7 +110,28 @@
 
 
 
-
+	<!--MODAL BY LUCIANA-->
+	<div class="modal" id=contato tabindex="-1" role="dialog" style = "font-family: 'Righteous', cursive;">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+		<h5 class="modal-title">Fale conosco</h5>
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		  <span aria-hidden="true">&times;</span>
+		</button>
+	      </div>
+	      <div class="modal-body">
+		<p>Email: academiaGymwoman@gmail.com</p>
+		<p>Endereço: Av Granja Portugual, Aldeota-Fortaleza(CE)</p>
+		<p>Telefone: (85)3371-4952</p>
+	      </div>
+	      <div class="modal-footer">
+		<button type="button" class="btn btn" style = "background-color:  #FA58D0;" data-dismiss="modal">Sair</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!--MODAL BY LUCIANA-->
 
 
 
