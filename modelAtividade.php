@@ -1,37 +1,32 @@
 <?php
 
-    include "Cliente.php";
-	class ModelCliente {
-		public function adicionar(Cliente $cliente){
+    include "Atividade.php";
+	class ModelAtividade {
+		public function adicionar(Atividade $atividade){
 				include "dbgymwoman.php";
-				$query = "INSERT INTO cliente(nome, endereco, bairro, cidade, email, telefone) VALUES (:nome, :endereco, :bairro, :cidade, :email, :telefone)";
+				$query = "INSERT INTO atividade(nome, valor, descricao) VALUES (:nome, :valor, :descricao)";
 				
 				$statement = $connection->prepare($query);
 				
 				$valores = array();
-				$valores[':nome'] = $cliente->getNome();
-				$valores[':endereco'] = $cliente->getEndereco();
-                $valores[':bairro'] = $cliente->getBairro();
-                $valores[':cidade'] = $cliente->getCidade();
-                $valores[':email'] = $cliente->getEmail();
-                $valores[':telefone'] = $cliente->getTelefone();
-                
+				$valores[':nome'] = $atividade->getNome();
+				$valores[':valor'] = $atividade->getValor();
+                $valores[':descricao'] = $atividade->getDescricao();
 				
 				$result = $statement->execute($valores);
 				
 				if(empty ($result) ){
-					echo "Inserir cliente deu erro.";
+					echo "Inserir atividade deu erro.";
 					print_r($statement->errorInfo());
 				}else {
-					echo "Inserir cliente deu certo";
+					echo "Inserir atividade deu certo";
 				}
 				
 		}
         
-        
                public function listar (){
                    include 'dbgymwoman.php';
-                $query = "SELECT nome,endereco,bairro, cidade, telefone, email FROM cliente";
+                $query = "SELECT nome,valor,descricao FROM atividade";
                 
                 $statement = $connection->prepare($query);
                 //executa a query
@@ -50,34 +45,31 @@
         }
         
         
-        public function editar(Cliente $cliente){
+        public function editar(Atividade $atividade){
             include "dbgymwoman.php";
             
-            $query = "UPDATE cliente SET nome = :nome, endereco = :endereco, bairro = :bairro, cidade = :cidade, telefone = :telefone, email = :email WHERE id = :id";
+            $query = "UPDATE atividade SET nome = :nome,valor = :valor, descricao = :descricao WHERE id = :id";
             
             $statement = $connection->prepare($query);
             
             $valores = array();
-            $valores[':nome'] = $cliente->getNome();
-            $valores[':endereco'] = $cliente->getEndereco();
-            $valores[':bairro'] = $cliente->getBairro();
-            $valores[':cidade'] = $cliente->getCidade();
-            $valores[':telefone'] = $cliente->getTelefone();
-            $valores[':email'] = $cliente->getEmail();
-            
+            $valores[':nome'] = $atividade->getNome();
+            $valores[':valor'] = $atividade->getValor();
+            $valores[':descricao'] = $atividade->getDescricao();
+           
             $result = $statement->execute($valores);
             
             if(empty ($result) ){
-                echo "Atualizar usuário deu erro.";
+                echo "Atualizar ativ deu erro.";
             }else {
-                echo "Atualizar usuário deu certo";
+                echo "Atualizar ativ deu certo";
             }
             
         }
         
         public function remover($id){
             include 'dbgymwoman.php';
-            $query = "DELETE FROM cliente WHERE id = :id";
+            $query = "DELETE FROM atividade WHERE id = :id";
             
             $statement = $connection->prepare($query);
             
@@ -87,9 +79,9 @@
             
             
             if(empty ($result) ){
-                echo "Remover usuário deu erro.";
+                echo "Remover ' atividade deu erro.";
             }else{
-                echo "Remover usuário deu certo";
+                echo "Remover atividade deu certo";
             }
             
         }

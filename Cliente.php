@@ -47,6 +47,12 @@
         public function setBairro($a){
              $this->bairro = $a;
         }
+        
+        public function setCidade($a){
+             $this->cidade = $a;
+        }
+        
+        
         public function setEmail($a){
              $this->email= $a;
         }
