@@ -31,7 +31,7 @@
         
                public function listar (){
                    include 'dbgymwoman.php';
-                $query = "SELECT nome,endereco,bairro, cidade, telefone, email FROM cliente";
+                $query = "SELECT id, nome,endereco,bairro, cidade, telefone, email FROM cliente";
                 
                 $statement = $connection->prepare($query);
                 //executa a query

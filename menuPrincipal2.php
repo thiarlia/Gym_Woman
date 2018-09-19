@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<meta charset = "UTF-8">
+		<title>Menu Principal </title>
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><!-- LINK PARA RESPOSIVIDADE-->
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 		<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
@@ -25,7 +26,7 @@
 			font-family: 'Permanent Marker', cursive; 
 			font-size: 70px; 
 			text-align: center;
-			margin-top: 4%;
+			margin-top: 10%;
 		}
 		div img#patrocinadores {
 			width: 40%;
@@ -51,28 +52,26 @@
 	</style>
 	<body>
 	
-		<nav class="navbar navbar-dark" style="background-color: black;" id = "menuPrincipal">
-			  <a class="navbar-brand" href="index.php"><img src = "material/imagens/logogym2.png" style = "width: 15%; margin-right: 15%;"></a>
-			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			  </button>
-
-			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav" id = "listaMenu">
-					<li>
+		<nav class="navbar navbar-expand-lg fixed-top navbar-dark" style="background-color: black; text-align: center;" id = "menuPrincipal">
+			  <div class="navbar " id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto mt-2 mt-lg-0" id = "listaMenu">
+					<li align = "left">
+						<a class="nav-item" href="index.php"><img src = "material/imagens/logogym2.png" style = "width: 15%;"></a>
+					</li>
+					<li style = "margin-left: -17%;">
 						<a class="nav-item nav-link active" href="index.php"></i>&nbspHOME&nbsp</a>
 					</li>
 					<li>
 						<a class="nav-item nav-link active" href="galeria.php">GALERIA&nbsp</a>
 					</li>
 					<li>
-						<a class="nav-item nav-link active" href="precos.php">PREÇOS&nbsp</a>
+						<a class="nav-item nav-link active" href="atividades.php">ATIVIDADES&nbsp</a>
 					</li>
 					<li>
 						<a class="nav-item nav-link active" href="horarios.php">HORÁRIOS&nbsp</a>
 					</li>
 					<li>
-						<a class="nav-item nav-link active" href="cadastro.php">CADASTRAR-SE&nbsp</a>
+						<a class="nav-item nav-link active" href="cadastro.php">CLIENTES&nbsp</a>
 					</li>
 					<li>
 						<a class="nav-item nav-link active" href="time.php">TIME&nbsp</a>

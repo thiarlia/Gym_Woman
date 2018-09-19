@@ -18,5 +18,6 @@
         $modelo = new ModelCliente();
         $modelo->adicionar($cliente);
     }
-
+    $modelo = new ModelCliente();
+    $listaDeCliente = $modelo->listar();
 ?>

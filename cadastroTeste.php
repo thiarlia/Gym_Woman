@@ -16,9 +16,7 @@
 	<div> 
 		<h1 id = "legendadapagina">TESTE</h1>
     </div>
-	<div>
-		<h5 align = "center" style = "margin-top: 2%;">*Atenção! Esse formulário é para pré inscrição.</h5>
-	</div>
+	
 	
 	
 	<div class = "container" style = "margin-top: 3%;">

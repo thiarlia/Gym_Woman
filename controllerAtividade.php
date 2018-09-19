@@ -14,5 +14,7 @@
         $modelo = new ModelAtividade();
         $modelo->adicionar($atividade);
     }
-
+    $modelo = new ModelAtividade();
+    $listaDeAtividade = $modelo->listar();
+    
 ?>
